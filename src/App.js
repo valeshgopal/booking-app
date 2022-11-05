@@ -5,13 +5,11 @@ import List from './pages/list/List';
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route eaxct path='/' element={<Home />} />
-        <Route path='/hotels' element={<List />} />
-        <Route path='/hotels/:id' element={<Hotel />} />
-      </Routes>
-    </BrowserRouter>
+    <Routes>
+      <Route exact path='/' element={<Home />} />
+      <Route path='/hotels' element={<List />} />
+      <Route path='/hotels/:id' element={<Hotel />} />
+    </Routes>
   );
 }
 
